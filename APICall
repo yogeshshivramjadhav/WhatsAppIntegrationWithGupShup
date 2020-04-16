@@ -1,0 +1,15 @@
+var client = new RestClient("https://api.gupshup.io/sm/api/v1/msg");
+var request = new RestRequest(Method.POST);
+request.AddHeader("cache-control", "no-cache");
+request.AddHeader("Connection", "keep-alive");
+request.AddHeader("Content-Length", "144");
+request.AddHeader("Accept-Encoding", "gzip, deflate");
+request.AddHeader("Host", "api.gupshup.io");
+request.AddHeader("Postman-Token", "4e1e7b03-7f3f-411f-910d-ceffe4eb480a,aad41628-7869-453e-a18c-bc80b8dff4a2");
+request.AddHeader("Cache-Control", "no-cache");
+request.AddHeader("Accept", "*/*");
+request.AddHeader("User-Agent", "PostmanRuntime/7.16.3");
+request.AddHeader("apikey", "58888de8faed4d76cd17fe24a86fdf7d");
+request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+request.AddParameter("undefined", "channel=whatsapp&source=registredmobilenumber&destination=sendersmobilenumber&src=yourprojectname&message=Message", ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
